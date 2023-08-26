@@ -55,11 +55,12 @@ font-size: 16px;
 }
 #main h1{
     text-transform: uppercase;
-    font-size:120px;
+    font-size:140px;
     display:flex;
     align-items: center;
     justify-content: center;
     font-family: 'Archivo', sans-serif;
+    
 }
 h1 span{
     padding:21px 37px;
@@ -69,4 +70,37 @@ h1 span{
     font-size: 28px;
     margin: 0 30px;
     font-family: 'Archivo', sans-serif;
+}
+#main h1:nth-child(2){
+  
+    margin-top:35px;
+}
+
+#main #left-land{
+    height: 180px;
+    position: absolute;
+    left: 21%;
+    bottom:10%;
+    border-radius: 20px;
+}
+#main #left-po{
+    height: 250px;
+    position: absolute;
+    left: 6%;
+    top:20%;
+border-radius: 20px;
+}
+#main #right-po{
+    height: 250px;
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+border-radius: 20px;
+}
+#main #right-land{
+    height: 170px;
+    position: absolute;
+    right: 24%;
+    top:13%;
+    border-radius: 20px;
 }
