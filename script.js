@@ -1,36 +1,29 @@
-gsap.from("#main #left-land",{
-    y:70,
-    duration:1,
-    delay:.5,
-    opacity:0
-})
-gsap.from("#main #left-po",{
-    x:-100,
-    duration:1,
-    delay:.5,
-    opacity:0
-})
-// gsap.from("#main #right-land,",{
-//     y:-200,
-//     duration:1,
-//     delay:.5,
-//     opacity:0
-// })
-gsap.from("#main #right-po,#main #right-land",{
-    x:120,
-    duration:1,
-    delay:.5,
-    opacity:0
-})
-gsap.from("#nav img,#nav h3 ,#nav h4",{
+var tl =  gsap.timeline()
+
+tl.from("#nav img,#nav h4,#nav button,#nav h3",{
     y:-100,
-    duration:1,
-    delay:.5,
-    opacity:0
+    duration:0.5,
+    delay:.2,
+    opacity:0,
+    stagger:0.2
 })
-gsap.from("#nav button",{
-    x:-100,
-    duration:1,
-    delay:.5,
-    opacity:0
+
+tl.from("#main h1 ,#vgs",{
+ delay:0.5,
+    opacity:0,
+    stagger:0.2,
+    scale:0
 })
+tl.from("#main>img",{
+    scale:0,
+    opacity:0,
+    stagger:0.1
+})
+tl.from("#main h5",{
+    opacity:0,
+    y:20,
+    repeat:-1,
+    yoyo:true,
+    scale:0
+})
+
