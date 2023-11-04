@@ -21,7 +21,7 @@ tl.from("#main>img",{
 })
 tl.from("#main h5",{
     opacity:0,
-    y:20,
+    y:10,
     repeat:-1,
     yoyo:true,
     scale:0
