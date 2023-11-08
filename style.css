@@ -1,147 +1,190 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Archivo', sans-serif;
-color: #fff;
+    color: #fff;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
-   
+
 }
-#main{
+
+#main {
     height: 100%;
     width: 100%;
-    background-color:black;
+    background-color: black;
 }
-#nav{
+
+#nav {
     height: 100px;
     width: 100%;
-   
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-    
+
 }
-#nav-part2{
-   
-    display:flex;
- gap :55px;
+
+
+#nav-part2 {
+    display: flex;
+    gap: 55px;
 }
-#nav-part3{
-   align-items: center;
-    display:flex;
- gap :55px;
+
+#nav-part3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
-img{
+
+#nav i {
+    font-size: 30px;
+    display: none;
+}
+
+#nav img {
     height: 60px;
 }
-#nav h3{
+
+#nav h3 {
     text-transform: uppercase;
 }
 
-#nav button{
+#nav button {
     text-transform: uppercase;
-    background-color:#fff;
-    color: black; 
-padding: 15px 25px;
-border: none;
-font-weight: 700;
-font-size: 16px;
+    background-color: #fff;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
 }
-#main h1{
+
+#main h1 {
     text-transform: uppercase;
-    font-size:140px;
-    display:flex;
+    font-size: 140px;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Archivo', sans-serif;
- position: relative;
+    position: relative;
 }
-h1 span{
-    
-    padding:21px 37px;
-    background-color:rgba(92, 43, 43, 0.985);
+
+h1 span {
+
+    padding: 21px 37px;
+    background-color: rgba(92, 43, 43, 0.985);
     color: white;
     border-radius: 34px;
     font-size: 28px;
     margin: 0 30px;
     font-family: 'Archivo', sans-serif;
 }
-#main h1:nth-child(2){
+
+#main h1:nth-child(2) {
     z-index: 1;
-    margin-top:35px;
-}
-#main h1:nth-child(4){
-    z-index: 1;
-   
+    margin-top: 35px;
 }
 
-#main #left-land{
+#main h1:nth-child(4) {
+    z-index: 1;
+
+}
+
+#main #left-land {
     height: 180px;
     position: absolute;
     left: 21%;
-    bottom:10%;
+    top: 500px;
     border-radius: 20px;
-    z-index:0;
+    z-index: 0;
 }
-#main #left-po{
+
+#main #left-po {
     height: 250px;
     position: absolute;
     left: 6%;
-    top:20%;
-border-radius: 20px;
+    top: 180px;
+    border-radius: 20px;
+    z-index: 0;
 }
-#main #right-po{
+
+#main #right-po {
     height: 250px;
     position: absolute;
-    right: 8%;
-    bottom: 10%;
-border-radius: 20px;
+    right: 90px;
+    top: 480px;
+    border-radius: 20px;
 }
-#main #right-land{
+
+#main #right-land {
     height: 170px;
     position: absolute;
     right: 24%;
-    top:13%;
+    top: 17%;
     border-radius: 20px;
 }
-#main h5{
-    margin-top:78px;
+
+#main h5 {
+    margin-top: 78px;
     text-transform: uppercase;
-    font-size:17px;
-    display:flex;
+    font-size: 17px;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Archivo', sans-serif;
- position: relative;
+    position: relative;
 }
-#main h4{
-    margin-top:12px;
+
+#main h4 {
+    margin-top: 12px;
     text-transform: uppercase;
-    font-size:17px;
-    display:flex;
+    font-size: 17px;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Archivo', sans-serif;
- position: relative;
+    position: relative;
 }
-#main button{
+
+#main button {
+
+    background-color: #fff;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 12px
+}
+
+#vgs {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px
+}
+
+@media( (max-width : 400px)  and (max-height: 900px) ){
+   
+    #nav-part3 {
+gap: 10px;
+    }
     
-    background-color:#fff;
-    color: black; 
-padding: 15px 25px;
-border: none;
-font-weight: 700;
-font-size: 16px;   background-color: #fff;
-    padding:12px
-}
-#vgs{
-    align-items: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:22px
+    #main{
+        width:720px;
+        height: 1080px;
+    }
+    #nav img{
+        height: 50px;
+        position: relative;
+        left: -10px;
+    }
 }
