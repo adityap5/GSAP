@@ -97,36 +97,37 @@ h1 span {
 }
 
 #main #left-land {
-    height: 180px;
+    height: 210px;
     position: absolute;
-    left: 21%;
-    top: 500px;
+    left: 18%;
+    top: 524px;
     border-radius: 20px;
     z-index: 0;
 }
 
 #main #left-po {
-    height: 250px;
+    height: 263px;
     position: absolute;
-    left: 6%;
-    top: 180px;
+    left: 2.5%;
+    top: 172px;
     border-radius: 20px;
     z-index: 0;
 }
 
 #main #right-po {
-    height: 250px;
+    height: 324px;
     position: absolute;
-    right: 90px;
-    top: 480px;
+    right: 189px;
+    top: 416px;
     border-radius: 20px;
+    z-index: 0;
 }
 
 #main #right-land {
-    height: 170px;
+    height: 197px;
     position: absolute;
-    right: 24%;
-    top: 17%;
+    right: 16%;
+    top: 12%;
     border-radius: 20px;
 }
 
