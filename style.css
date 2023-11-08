@@ -175,17 +175,93 @@ h1 span {
 
 @media( (max-width : 400px)  and (max-height: 900px) ){
    
-    #nav-part3 {
+    /* #nav-part3 {
 gap: 10px;
+    } */
+    #nav i{
+        display:block;
     }
-    
+    #nav-part2 ,#nav-part3{
+        display:none;
+    }
     #main{
         width:720px;
         height: 1080px;
     }
     #nav img{
-        height: 50px;
+        height: 40px;
         position: relative;
-        left: -10px;
+        left: -30px;
+    }
+    #main #right-land {
+        /* height: 197px;
+        position: absolute;
+        right: 16%;
+        top: 12%;
+        border-radius: 20px; */
+        display: none;
+    }
+    #main #left-land {
+        height: 210px;
+        position: absolute;
+        left: 18%;
+        top: 524px;
+        border-radius: 20px;
+        z-index: 0;
+        display: none;
+
+    }
+    
+    #main #left-po {
+        display: none;
+
+        height: 263px;
+        position: absolute;
+        left: 2.5%;
+        top: 172px;
+        border-radius: 20px;
+        z-index: 0;
+    }
+    
+    #main #right-po {
+        display: none;
+
+        height: 324px;
+        position: absolute;
+        right: 189px;
+        top: 416px;
+        border-radius: 20px;
+        z-index: 0;
+    }
+    #main h1 {
+        text-transform: uppercase;
+        font-size: 10px;
+        right: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Archivo', sans-serif;
+        position: relative;
+    }
+    h1 span{
+        padding: 10px 10px;
+        background-color: rgba(92, 43, 43, 0.985);
+        color: white;
+        border-radius: 34px;
+        font-size: 10px;
+        margin: 5px 4px;
+        font-family: 'Archivo', sans-serif;
+    }
+    #vgs {
+        position: relative;
+        gap: 22px;
+        right: 140px;
+    }
+    #vgs h4{
+        font-size: 10px;
+        
+    }
+    #vgs button{
+
     }
 }
