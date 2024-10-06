@@ -10,13 +10,13 @@ html,
 body {
     height: 100%;
     width: 100%;
-
 }
 
 #main {
     height: 100%;
     width: 100%;
     background-color: black;
+    overflow-x: hidden;
 }
 
 #nav {
@@ -26,9 +26,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-
 }
-
 
 #nav-part2 {
     display: flex;
@@ -67,21 +65,22 @@ body {
 
 #main h1 {
     text-transform: uppercase;
-    font-size: 140px;
+    font-size: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Archivo', sans-serif;
     position: relative;
+    text-align: center;
+    z-index: 1;
 }
 
 h1 span {
-
     padding: 21px 37px;
     background-color: rgba(92, 43, 43, 0.985);
     color: white;
     border-radius: 34px;
-    font-size: 28px;
+    font-size: 2vw;
     margin: 0 30px;
     font-family: 'Archivo', sans-serif;
 }
@@ -93,42 +92,39 @@ h1 span {
 
 #main h1:nth-child(4) {
     z-index: 1;
+}
 
+#main #left-land,
+#main #left-po,
+#main #right-po,
+#main #right-land {
+    position: absolute;
+    border-radius: 20px;
+    z-index: 0;
 }
 
 #main #left-land {
-    height: 210px;
-    position: absolute;
+    height: 30vh;
     left: 18%;
-    top: 524px;
-    border-radius: 20px;
-    z-index: 0;
+    top: 60%;
 }
 
 #main #left-po {
-    height: 263px;
-    position: absolute;
-    left: 2.5%;
-    top: 172px;
-    border-radius: 20px;
-    z-index: 0;
+    height: 35vh;
+    left: 10%;
+    top: 20%;
 }
 
 #main #right-po {
-    height: 324px;
-    position: absolute;
-    right: 189px;
-    top: 416px;
-    border-radius: 20px;
-    z-index: 0;
+    height: 40vh;
+    right: 10%;
+    top: 50%;
 }
 
 #main #right-land {
-    height: 197px;
-    position: absolute;
+    height: 30vh;
     right: 16%;
     top: 12%;
-    border-radius: 20px;
 }
 
 #main h5 {
@@ -154,114 +150,71 @@ h1 span {
 }
 
 #main button {
-
     background-color: #fff;
     color: black;
     padding: 15px 25px;
     border: none;
     font-weight: 700;
     font-size: 16px;
-    background-color: #fff;
-    padding: 12px
 }
 
 #vgs {
-    align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 22px
+    gap: 22px;
+}
+@media (max-width: 768px) {
+    #main #left-land,
+    #main #left-po,
+    #main #right-po,
+    #main #right-land {
+        display: block;
+        position: static;
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main h1 {
+        text-align: center;
+    }
 }
 
-@media( (max-width : 400px)  and (max-height: 900px) ){
-   
-    /* #nav-part3 {
-gap: 10px;
-    } */
-    #nav i{
-        display:block;
-    }
-    #nav-part2 ,#nav-part3{
-        display:none;
-    }
-    #main{
-        width:720px;
-        height: 1080px;
-    }
-    #nav img{
-        height: 40px;
-        position: relative;
-        left: -30px;
-    }
-    #main #right-land {
-        /* height: 197px;
-        position: absolute;
-        right: 16%;
-        top: 12%;
-        border-radius: 20px; */
-        display: none;
-    }
-    #main #left-land {
-        height: 210px;
-        position: absolute;
-        left: 18%;
-        top: 524px;
-        border-radius: 20px;
-        z-index: 0;
-        display: none;
-
+@media (max-width: 768px) {
+    #nav i {
+        display: block;
     }
     
-    #main #left-po {
+    #nav-part2, #nav-part3 {
         display: none;
-
-        height: 263px;
-        position: absolute;
-        left: 2.5%;
-        top: 172px;
-        border-radius: 20px;
-        z-index: 0;
     }
     
-    #main #right-po {
-        display: none;
-
-        height: 324px;
-        position: absolute;
-        right: 189px;
-        top: 416px;
-        border-radius: 20px;
-        z-index: 0;
+    #nav img {
+        height: 30px;
     }
+    
     #main h1 {
-        text-transform: uppercase;
-        font-size: 10px;
-        right: 140px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Archivo', sans-serif;
-        position: relative;
+        font-size: 8vw;
     }
-    h1 span{
-        padding: 10px 10px;
-        background-color: rgba(92, 43, 43, 0.985);
-        color: white;
-        border-radius: 34px;
-        font-size: 10px;
-        margin: 5px 4px;
-        font-family: 'Archivo', sans-serif;
+    
+    h1 span {
+        padding: 10px;
+        font-size: 3vw;
+        margin: 0 10px;
     }
-    #vgs {
-        position: relative;
-        gap: 22px;
-        right: 140px;
-    }
-    #vgs h4{
-        font-size: 10px;
-        
-    }
-    #vgs button{
 
+    #vgs {
+        flex-direction: column;
+    }
+    
+    #vgs h4 {
+        font-size: 14px;
     }
 }
